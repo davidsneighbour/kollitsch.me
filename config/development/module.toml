@@ -1,0 +1,7 @@
+replacements = "github.com/davidsneighbour/hugo-monologue -> ../../hugo-monologue"
+
+[[imports]]
+path = "github.com/davidsneighbour/hugo-monologue"
+disable = false
+ignoreConfig = false
+ignoreImports = false

@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "kollitsch.me",
+			"path": "."
+		},
+		{
+			"name": "hugo-modules",
+			"path": "../hugo-modules"
+		},
+		{
+			"name": "hugo-monologue",
+			"path": "../hugo-monologue"
+		}
+	],
+	"settings": {}
+}

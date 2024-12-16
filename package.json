@@ -1,0 +1,15 @@
+{
+  "name": "kollitsch.me",
+  "description": "",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Patrick Kollitsch <patrick@davids-neighbour.com>",
+  "keywords": [],
+  "dependencies": {
+    "@davidsneighbour/markdownlint-config": "2024.4.12",
+    "@davidsneighbour/remark-config": "2024.4.12"
+  },
+  "scripts": {
+  },
+  "main": "index.js"
+}

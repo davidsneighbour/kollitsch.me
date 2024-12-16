@@ -1,0 +1,4 @@
+baseURL = 'https://kollitsch.me/'
+languageCode = 'en-us'
+title = 'kollitsch.me'
+disableKinds = ['taxonomy', 'term']

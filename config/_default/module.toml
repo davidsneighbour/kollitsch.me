@@ -1,0 +1,5 @@
+[[imports]]
+path = "github.com/davidsneighbour/hugo-monologue"
+disable = false
+ignoreConfig = false
+ignoreImports = false
