@@ -7,14 +7,15 @@
   "keywords": [],
   "dependencies": {
     "@davidsneighbour/markdownlint-config": "2024.4.12",
-    "@davidsneighbour/remark-config": "2024.4.12",
     "@davidsneighbour/release-config": "2024.4.12",
-    "@davidsneighbour/tools": "2024.4.12"
+    "@davidsneighbour/remark-config": "2024.4.12",
+    "@davidsneighbour/tools": "2024.4.12",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0"
   },
   "devDependencies": {
     "@apidevtools/json-schema-ref-parser": ">=11.7.3"
   },
-  "scripts": {
-  },
+  "scripts": {},
   "main": "index.js"
 }
