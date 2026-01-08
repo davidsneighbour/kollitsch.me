@@ -14,7 +14,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     onSubmit?.(formData);
-    
+
     // Reset form
     setFormData({ name: '', email: '', message: '' });
   };
@@ -43,7 +43,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
           className="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded-lg text-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
         />
       </div>
-      
+
       <div>
         <label htmlFor="email" className="block text-sm font-quicksand font-medium text-slate-300 mb-1 uppercase tracking-wide">
           Email
@@ -58,7 +58,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
           className="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded-lg text-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
         />
       </div>
-      
+
       <div>
         <label htmlFor="message" className="block text-sm font-quicksand font-medium text-slate-300 mb-1 uppercase tracking-wide">
           Message
@@ -73,7 +73,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
           className="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded-lg text-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
         />
       </div>
-      
+
       <button
         type="submit"
         className="w-full bg-blue-600 hover:bg-blue-700 text-white font-quicksand font-semibold py-2 px-4 rounded-lg transition-colors uppercase tracking-wide"
