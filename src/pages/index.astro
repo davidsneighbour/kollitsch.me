@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PortfolioGrid from '../components/PortfolioGrid';
+---
+
+<Layout title="Patrick Kollitsch - Full-Stack Developer">
+  <main class="min-h-screen py-8">
+    <PortfolioGrid client:load />
+  </main>
+</Layout>
+
+<script>
+  // Smooth hash navigation
+  function handleHashChange() {
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }
+  }
+
+  // Handle initial hash on page load
+  document.addEventListener('DOMContentLoaded', handleHashChange);
+  
+  // Handle hash changes
+  window.addEventListener('hashchange', handleHashChange);
+  
+  // Add loading animation
+  document.addEventListener('DOMContentLoaded', () => {
+    const tiles = document.querySelectorAll('[class*="col-span"]');
+    tiles.forEach((tile, index) => {
+      tile.style.opacity = '0';
+      tile.style.transform = 'translateY(20px)';
+      
+      setTimeout(() => {
+        tile.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        tile.style.opacity = '1';
+        tile.style.transform = 'translateY(0)';
+      }, index * 100);
+    });
+  });
+</script>
+</Layout>
